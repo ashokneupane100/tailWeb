@@ -22,19 +22,20 @@ const Footer = () => {
           x="50%"
           y="75%"
           fill="white"
-          className="text-5xl text-center"
+          className="text-5xl text-center p-4"
           textAnchor="right"
         >
           
         </text>
         <text
           x="50%"
-          y="90%" // Adjusted the y position to create more space
+          y="90%"
           fill="white"
           className="text-5xl"
           textAnchor="middle"
         >
-        &copy; Ashok Neupane {dateTime.toLocaleString()}
+      &copy; Ashok Neupane {dateTime.toLocaleString('en-IN', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true, year: 'numeric', month: 'short', day: 'numeric' })}
+
         </text>
       </svg>
     </div>

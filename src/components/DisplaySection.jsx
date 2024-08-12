@@ -11,7 +11,7 @@ const DisplaySection = () => {
           <dotlottie-player 
             src="https://lottie.host/b27fcd0b-f126-43f5-8637-7aeda07f6958/tOOmdjCsQj.json" 
             background="transparent" 
-            speed="1" 
+            speed="12" 
             loop 
             autoplay 
             style={{ height: "100%", width: "100%" }} 
