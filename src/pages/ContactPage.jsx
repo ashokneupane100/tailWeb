@@ -1,13 +1,16 @@
-import React from 'react'
+import React from 'react';
 
 const ContactPage = () => {
   return (
-    <div>
-
-      <h1>This is Contact Page</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, deleniti expedita fugit unde laborum minima corporis harum obcaecati saepe cumque impedit. Aliquam omnis ipsam officiis nesciunt voluptatum maxime et saepe!</p>
+    <div className='container mx-auto px-4 sm:px-6 lg:px-8'>
+      <h1 className='text-3xl sm:text-4xl lg:text-5xl font-bold text-center m-6'>
+        This is the Contact Page:
+      </h1>
+      <p className='text-lg sm:text-xl lg:text-2xl text-gray-700 text-center'>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam impedit, saepe quas magnam quibusdam corrupti voluptatem? Atque non, recusandae in totam velit, ab molestiae necessitatibus et, minima pariatur delectus obcaecati.
+      </p>
     </div>
-  )
-}
+  );
+};
 
-export default ContactPage
+export default ContactPage;
