@@ -1,5 +1,4 @@
-import React from "react";
-import { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 const Footer = () => {
   const [dateTime, setDateTime] = useState(new Date());
@@ -10,7 +9,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <div className="text-white text-5xl">
+    <div className="text-white text-center py-0">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           id="wavePath"
@@ -20,22 +19,23 @@ const Footer = () => {
         ></path>
         <text
           x="50%"
-          y="75%"
-          fill="white"
-          className="text-5xl text-center p-4"
-          textAnchor="right"
-        >
-          
-        </text>
-        <text
-          x="50%"
           y="90%"
           fill="white"
-          className="text-5xl"
+          className="bg-green-900 text-white rounded-lg text-5xl sm:text-5xl md:text-5xl"
           textAnchor="middle"
         >
-      &copy; Ashok Neupane {dateTime.toLocaleString('en-IN', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true, year: 'numeric', month: 'short', day: 'numeric' })}
-
+          <tspan className="text-3xl">&copy; Ashok Neupane{" "}</tspan>
+          <tspan>
+            {dateTime.toLocaleString("en-IN", {
+              hour: "numeric",
+              minute: "numeric",
+              second: "numeric",
+              hour12: true,
+              year: "numeric",
+              month: "short",
+              day: "numeric",
+            })}
+          </tspan>
         </text>
       </svg>
     </div>
