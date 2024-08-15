@@ -19,10 +19,10 @@ const Tech = () => {
           <FaCss3Alt />
         </div>
         <div className="flex items-center justify-center text-[100px]">
-          <IoLogoJavascript />
+          <IoLogoJavascript className="" />
         </div>
         <div className="flex items-center justify-center text-[100px]">
-          <DiMongodb />
+          <DiMongodb className="" />
         </div>
         <div className="flex items-center justify-center text-[100px]">
           <SiExpress />

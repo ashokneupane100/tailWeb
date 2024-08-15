@@ -4,8 +4,13 @@ import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import RootLayout from './components/RootLayout';
 import HomePage from './pages/HomePage';
+import Class1 from './pages/Class1';
+
+
+
 
 const App = () => {
+
 
   const router = createBrowserRouter([
     {
@@ -23,7 +28,11 @@ const App = () => {
         {
           path: 'contact-page',
           element: <ContactPage />
-        }
+        },
+        {
+          path: 'class1',
+          element: <Class1 />
+        },
       ]
     },
 
