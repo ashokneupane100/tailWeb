@@ -2,6 +2,9 @@ import React from "react";
 
 export default function Class1() {
   return (
+
+    <div className="border-solid border-black border-2 m-3 p-16 rounded-2xl">
+
     <div className="max-w-4xl mx-auto border rounded-lg shadow-md overflow-hidden">
       <div className="grid grid-cols-1 md:grid-cols-3">
         {/* Left Section - Image */}
@@ -14,7 +17,7 @@ export default function Class1() {
         </div>
 
         {/* Right Section - Text Content */}
-        <div className="col-span-2 md:col-span-2 flex flex-col justify-center p-6 space-y-4">
+        <div className="col-span-2 md:col-span-2 flex flex-col justify-center p-6 space-y-4 border-solid border-black border-2 m-3 rounded-3xl">
           <div className="text-gray-500 text-sm flex items-center">
             <svg className="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 12H8m4-4v8m0 4c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z" />
@@ -36,12 +39,14 @@ export default function Class1() {
               alt="Jonathan Reinink"
             />
             <div className="text-sm">
-              <p className="text-gray-900 leading-none">Jonathan Reinink</p>
-              <p className="text-gray-600">Aug 18</p>
+              <p className="text-gray-900 leading-none">Ram Prasad Pokharel</p>
+              <p className="text-gray-600">{new Date().toLocaleDateString("en-IN")}
+              </p>
             </div>
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
