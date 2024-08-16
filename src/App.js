@@ -5,6 +5,7 @@ import ContactPage from './pages/ContactPage';
 import RootLayout from './components/RootLayout';
 import HomePage from './pages/HomePage';
 import Class1 from './pages/Class1';
+import Card1 from './pages/Card1';
 
 
 
@@ -32,6 +33,10 @@ const App = () => {
         {
           path: 'class1',
           element: <Class1 />
+        },
+        {
+          path: 'card1',
+          element: <Card1 />
         },
       ]
     },

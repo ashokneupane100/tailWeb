@@ -4,7 +4,7 @@ import Intro from '../pages/Intro';
 
 const DisplaySection = () => {
   return (
-    <div className='grid grid-cols-1'>
+    <div className='grid grid-cols-1 mb-8'>
     <div className='m-6 grid grid-cols-1 md:grid-cols-2 items-center md:mb-12 px-4'>
       <div className='flex justify-center'>
         <div className='dis-img h-auto max-w-full'>
