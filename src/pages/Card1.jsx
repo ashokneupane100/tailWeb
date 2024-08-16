@@ -4,9 +4,9 @@ export default function Card1() {
   return (
     <div className="bg-black min-h-screen flex items-center justify-center">
       <div
-        className="bg-purple-900 min-h-screen flex items-center justify-center px-4 sm:px-14 md:px-20 lg:px-40 rounded-lg"
-        style={{ marginTop: "30%", marginBottom: "30%" }}
-      >
+  className="bg-purple-900 min-h-96 flex items-center justify-center px-4 py-[-2rem] sm:px-14 md:px-20 lg:px-40 rounded-lg"
+  style={{ marginTop: "15%", marginBottom: "15%" }}
+>
         <div className="bg-white rounded-lg shadow-lg p-8 sm:p-8 md:p-8 max-w-sm text-center w-full ">
           <div className="grid grid-cols-1">
             <div className="-mb-9 text-black -mt-5 px-4 py-2 rounded-t-lg">
