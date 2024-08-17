@@ -1,12 +1,14 @@
 import React from "react";
 
 export default function Card1() {
+  window.scroll(0, 0);
+
   return (
     <div className="bg-black min-h-screen flex items-center justify-center">
       <div
-  className="bg-purple-900 min-h-96 flex items-center justify-center px-4 py-[-2rem] sm:px-14 md:px-20 lg:px-40 rounded-lg"
-  style={{ marginTop: "15%", marginBottom: "15%" }}
->
+        className="bg-purple-900 min-h-96 flex items-center justify-center px-4 py-[-2rem] sm:px-14 md:px-20 lg:px-40 rounded-lg"
+        style={{ marginTop: "15%", marginBottom: "15%" }}
+      >
         <div className="bg-white rounded-lg shadow-lg p-8 sm:p-8 md:p-8 max-w-sm text-center w-full ">
           <div className="grid grid-cols-1">
             <div className="-mb-9 text-black -mt-5 px-4 py-2 rounded-t-lg">
@@ -29,7 +31,9 @@ export default function Card1() {
               </div>
 
               <div className="text-left mt-4 ml-4">
-                <p className="text-sm text-gray-500 -ml-8 text-white">Created By:</p>
+                <p className="text-sm text-gray-500 -ml-8 text-white">
+                  Created By:
+                </p>
                 <p className="text-base font-medium text-white -ml-8">
                   Ashok Neupane
                 </p>

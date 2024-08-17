@@ -1,8 +1,17 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Header = () => {
+  const [dateTime, setDateTime] = useState(new Date());
+
+  //How is this guys ? Happy Coding .....
+
+  useEffect(() => {
+    const timer = setInterval(() => setDateTime(new Date()), 1000);
+    return () => clearInterval(timer);
+  }, []);
   return (
+    <div className='grid grid-cols-1'>
     <div className="bg-black text-white px-5 py-3 flex justify-between items-center flex-wrap">
       <NavLink to="/">
         <div className="flex items-center">
@@ -31,6 +40,30 @@ const Header = () => {
           Contact
         </NavLink>
       </nav>
+    </div>
+    <div className='text-center'>
+  <p className="bg-green-900 text-white p-2 text-2xl font-semibold">
+    {(() => {
+      const options = {
+        hour: "numeric",
+        minute: "numeric",
+        second: "numeric",
+        hour12: true,
+        month: "short",
+        day: "numeric",
+      };
+
+      const time = dateTime.toLocaleString("en-IN", options);
+      const weekday = dateTime.toLocaleString("en-IN", { weekday: "long" });
+
+      return <>
+
+ {time.replace(/am|pm/, '')} <br />  {weekday}
+       
+       </>;
+    })()}
+  </p>
+</div>
     </div>
   );
 };
