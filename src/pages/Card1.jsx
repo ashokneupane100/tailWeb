@@ -13,8 +13,8 @@ export default function Card1() {
               <h2 className="text-xl sm:text-2xl font-semibold text-gray-800">
                 Tailwind CSS Card
               </h2>
-              <p className="text-gray-500 mt-2">
-                "A utility-first CSS framework for rapid UI development."
+              <p className="text-gray-950 mt-2 font-semibold">
+                "This is the card created by using tailwind CSS and reactJS"
               </p>
             </div>
             <br />

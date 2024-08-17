@@ -23,7 +23,7 @@ const App = () => {
           element: <HomePage />
         },
         {
-          path: 'about-page',
+          path: 'about',
           element: <AboutPage />
         },
         {

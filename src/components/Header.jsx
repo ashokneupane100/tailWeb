@@ -21,7 +21,10 @@ const Header = () => {
         </div>
       </NavLink>
       <nav className="space-x-4 mt-2 sm:mt-0">
-        <NavLink to="/about-page" className="hover:text-gray-300">
+        <NavLink to="/card1" className="hover:text-gray-300">
+          Card1
+        </NavLink>
+        <NavLink to="/about" className="hover:text-gray-300">
           About
         </NavLink>
         <NavLink to="/contact-page" className="hover:text-gray-300">
